@@ -1,0 +1,67 @@
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #4a3339;
+  background: #fffaf7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --rose: #c86f7d;
+  --rose-deep: #913f53;
+  --rose-light: #f1c7c7;
+  --blush: #fae9e5;
+  --cream: #fffaf2;
+  --ink: #4a3339;
+  --muted: #967f7e;
+  --serif: 'Playfair Display', Georgia, serif;
+  --script: 'Sacramento', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #bc6879;
+  outline-offset: 4px;
+}
+
+::selection {
+  color: #fff;
+  background: #bd6b7b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
